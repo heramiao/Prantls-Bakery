@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8"/>
+	<meta name="author" content="Hera Miao"/>
+	<meta name="keywords" content="Prantl's Bakery"/>
+	<meta name="description" content="Prantl's Bakery Website"/>
+
+	<title> Prantl's Bakery - Data Visualization </title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/exporting.js"></script>
+
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#january').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Number of Sales: January, 2016'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Item',
+            colorByPoint: true,
+            data: [{
+                name: 'Burnt Almond Torte',
+                y: 534
+            }, {
+                name: 'Butter Cookie (dozen)',
+                y: 159
+            }, {
+                name: 'Carrot Cake',
+                y: 38
+            }]
+        }]
+    });
+});
+
+$(function () {
+    $('#february').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Number of Sales: February, 2016'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Item',
+            colorByPoint: true,
+            data: [{
+                name: 'Burnt Almond Torte',
+                y: 498
+            }, {
+                name: 'Butter Cookie (dozen)',
+                y: 287
+            }, {
+                name: 'Carrot Cake',
+                y: 27
+            }]
+        }]
+    });
+});
+
+$(function () {
+    $('#march').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Number of Sales: March, 2016'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Item',
+            colorByPoint: true,
+            data: [{
+                name: 'Burnt Almond Torte',
+                y: 512
+            }, {
+                name: 'Butter Cookie (dozen)',
+                y: 319
+            }, {
+                name: 'Carrot Cake',
+                y: 157
+            }]
+        }]
+    });
+});
+		</script>
+</head>
+
+<body>
+
+	<div id="container">
+
+	<div id="top_row">
+
+	<header>
+		<a href="index.html"><img src="images/prantls-bakery.jpg" alt="Prantl's Bakery"></a>
+		<nav>
+			<ul>
+				<li><a href="ourstory.html">Our Story</a></li>
+				<li><a href="findus.html">Find Us</a></li>
+				<li><a href="catering.html">Catering</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="datavisualization.html">Data Visualization</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <br>
+    <br>
+
+    <h1>Popular Items for All Locations</h1>
+
+
+	</div>
+
+	<br>
+	<br>
+
+	<div id="january"></div>
+	<br>
+	<div id="february"></div>
+	<br>
+	<div id="march"></div>
+
+	</div>
+
+	<div id="sidebar">
+		<strong>ShadySide</strong><br/>
+		Mon: 9am-4pm<br/>
+		Tues-Sat: 7:30am-6pm<br/>
+		Sun: 9am-4pm<br/>
+		412-621-2092<br/>
+		<a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a><br/>
+		<br>
+		<strong>Downtown</strong><br/>
+		Mon-Fri: 7am-6pm<br/>
+		Sat: 9am-4pm<br/>
+		Sun: 10am-3pm<br/>
+		412-471-6861<br/>
+		<a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a><br/>
+	</div>
+
+	<footer>
+		&copy; Prantl's Bakery<br/>
+		<a href="https://www.facebook.com/PrantlsBakery"><img src="images/facebook.png" alt="Facebook"></a>
+		<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram.png" alt="Instagram"></a>
+		<a href="https://twitter.com/prantlsbakery"><img src="images/twitter.png" alt="Twitter"></a>
+	</footer>
+
+</body>
+
+</html>

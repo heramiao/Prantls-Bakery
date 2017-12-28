@@ -1,0 +1,240 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.7em;
+	color: #000000;
+	background-color: #ccffcc;
+}
+
+#top_row nav {
+	display: inline;
+	float: middle; 
+	font-size: 20px;
+}
+
+#top_row nav a { 
+	text-decoration: none;
+	font-size: 1.125em; 
+	font-weight: 400; 
+	padding: 15px; 
+	color: black;
+}
+
+#top_row nav a:hover { 
+	background: #00a665;
+	color: black;
+}
+
+#top_row nav ul {
+ 	text-align: center;
+ 	display: inline-block;
+}
+
+#top_row nav ul li {
+	display: inline;
+}
+
+#container {
+	float: left;
+	width: 83%;
+}
+
+#sidebar {
+	float: right;
+	margin-top: 300px;
+	padding: 1em;
+	font-size: .875em;
+	border: solid black;
+	background: #00a665;
+}
+
+footer {
+	clear: both; 
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps; 
+	font­size: .813em;
+	text-align: center;
+}
+
+/*Index Page*/
+#index_header {
+	font-family: 'Lato';
+	font-style: italic;
+	font-size: 25px;
+}
+
+#slideshow {
+	width:750px;
+	height:450px;
+	position:relative;
+	margin-left: 150px;
+}
+
+#slideshow.prevButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('../images/buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:left top;
+	left:0
+}
+
+#slideshow.prevButton:hover{ background-position:left bottom;left:0;}
+
+#slideshow.nextButton{
+	height:72px;
+	width:68px;
+	position:absolute;
+	background:url('../images/buttons.png') no-repeat;
+	top:50%;
+	margin-top:-36px;
+	cursor:pointer;
+	z-index:2000;
+	background-position:right top;
+	right:0
+}
+
+#slideshow.nextButton:hover{background-position:right bottom;right:0;}
+
+#slideshow ul{
+	width:750px;
+	height:450px;
+	list-style:none outside none;
+	position:relative;
+	overflow:hidden;
+}
+
+#slideshow li:first-child{
+	display:list-item;
+	position:absolute;
+}
+
+#slideshow li{
+	position:absolute;
+	display:none;
+}
+
+/*Find Us Page */
+#shadyside {
+	display: inline-block;
+	float: left;
+	border: 1px solid;
+	margin-left: 40px;
+	background-color: white;
+}
+
+#downtown {
+	display: inline-block;
+	float: right;
+	border: 1px solid;
+	margin-right: 40px;
+	background-color: white;
+}
+
+/*Catering Page*/
+#catering {
+	width: 100%;
+}
+
+#tabs1 {
+	width: 64%;
+	margin-left: 15px;
+	float: left;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+#tabs1 a{
+	color: black;
+}
+
+#tabs2 {
+	width: 64%;
+	margin-left: 15px;
+	float: left;
+	background-color: white;
+}
+
+#tabs2 a{
+	color: black;
+}
+
+#celebrations_img {
+	float: right;
+	padding-top: 60px;
+}
+
+#wedding_img {
+	float: right;
+}
+
+#catering_header {
+	font-family: 'Lato';
+	font-style: italic;
+	font-size: 25px;
+}
+
+/*Contact Us Page*/
+#content form {
+	width: 40%;
+	margin-left: 40%;
+	border: 4px;
+	border-style: solid;
+	padding: 15px;
+	color: #00a665;
+	float: left;
+	background-color: white;
+}
+
+#content form legend {
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	margin-bottom: 5px;
+}
+
+#content form label {
+	font-weight: bold;
+	text-align: center;
+	color: black;
+}
+
+#content form input-label {
+	color: black;
+}
+
+/*Our Story Page */
+#row h1{
+	font-family: 'Lato';
+	font-style: italic;
+	font-size: 35px;
+}
+
+#description { 
+	float: left;
+	width: 60%;
+}
+
+#description p{
+	text-indent: 20px;
+}
+
+#image {
+	margin-left: 450px;
+	padding-top: 20px;
+}
+
+#row {
+	width: 100%;
+}
+
+
+
+
+
